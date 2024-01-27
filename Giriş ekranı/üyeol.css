@@ -1,0 +1,113 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #F5F5F5; /* Arka plan rengi */
+}
+
+
+
+
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.emoji {
+    position: absolute;
+    font-size: 80px; /* Emoji boyutu */
+    opacity: 0;
+    animation: fade 8s infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    20%, 80% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 40px;
+    background-color: white;
+   
+
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3), 0 0 8px rgba(0, 0, 0, 0.2);
+
+    text-align: unset;
+}
+
+
+h2 {
+    margin-top:  inherit;
+    color: #333333; /* Başlık metin rengi */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CCCCCC; /* Input kenarlık rengi */
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF; /* Buton arka plan rengi */
+    color: #FFFFFF; /* Buton metin rengi */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #0056b3; /* Butonun üzerine gelindiğindeki arka plan rengi */
+    }
+
+p {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+a {
+    color: #007BFF; /* Link rengi */
+    text-decoration: none;
+   
+    
+}
+
+    a:hover {
+        text-decoration: auto;
+    }

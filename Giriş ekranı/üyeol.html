@@ -1,0 +1,27 @@
+﻿﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Üye Ol</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="üyeol.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="login-container">
+        <h2>Üye Ol</h2>
+        <form method="POST" action="uyeol.php">
+            <input type="text" name="Ad" placeholder="İsim" required>
+            <input type="text" name="Soyad" placeholder="Soyisim" required>
+            <input type="email" name="Email" placeholder="E-posta" required>
+            <input type="password" name="Sifre" placeholder="Şifre" required>
+            <input type="password" name="SifreTekrar" placeholder="Şifre Tekrar" required>
+            <button type="submit" name="button">Üye Ol</button>
+        </form>
+        <div class="login-text">
+            Zaten bir hesabınız var mı? <a href="login.html">Giriş Yap</a>
+        </div>
+    </div>
+    <script src="üyeol.js"></script>
+</body>
+</html>

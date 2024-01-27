@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hesap Ayarları</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="email"],
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #444;
+            color: #fff;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .delete-account {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+            .delete-account button {
+                background-color: #f44336;
+            }
+
+        .settings-icons {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px;
+        }
+
+            .settings-icons .icon {
+                font-size: 24px;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+    </style>
+</head>
+<body>
+  
+    <div class="container">
+        <h1>Hesap Ayarları</h1>
+        <form method="POST" action="hesapayarlari.php">
+            
+            <label for="email">E-posta Adresi</label>
+            <input type="email" id="email" name="Email" placeholder="ornek@eposta.com" required>
+
+            <label for="current-password">Mevcut Şifre</label>
+            <input type="password" id="current-password" name="Sifre" required>
+
+            <label for="new-password">Yeni Şifre</label>
+            <input type="password" id="new-password" name="YeniSifre" required>
+
+            <label for="confirm-password">Yeni Şifre (Tekrar)</label>
+            <input type="password" id="confirm-password" name="YeniSifreTekrar" required><br><br>
+
+            <button type="submit">Bilgileri Güncelle</button>
+        </form>
+
+      
+    </div>
+</body>
+</html>
